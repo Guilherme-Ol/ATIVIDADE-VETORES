@@ -1,0 +1,30 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro matrizNumeros[3][5]
+
+        escreva("Digite os valores para a matriz de 3x5:\n")
+        para (inteiro i = 0; i < 3; i++){
+        	
+            para (inteiro j = 0; j < 5; j++){
+            	
+                escreva("Digite o valor para a posição [", i, "][", j, "]: ")
+                leia(matrizNumeros[i][j])
+            }
+        }
+		
+        escreva("\nNúmeros pares digitados e suas posições:\n")
+        
+        para (inteiro i = 0; i < 3; i++){
+            
+            para (inteiro j = 0; j < 5; j++){
+            	
+                se (matrizNumeros[i][j] % 2 == 0){
+                    
+                    escreva("Número par: ", matrizNumeros[i][j], " na posição [", i, "][", j, "]\n")
+                }
+            }
+        }
+    }
+}
